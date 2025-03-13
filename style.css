@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+}
+
+.header-container {
+	margin-left: 100px;
+	margin-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 15.5px;
+  padding-bottom: 15.5px;
+}
+
+.audi-logo {
+  height: 24px;
+  width: 69px;
+  cursor: pointer;
+}
+
+.left-section {
+  margin-left: 50px;
+  display: flex;
+}
+
+.middle-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.middle-section-container {
+	display: flex;
+  justify-content: space-between;
+	gap: 40px;
+}
+
+.nav-item {
+  color: rgb(109, 109, 109);
+  font-size: 24px;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: black;
+}
+
+.right-section {
+  margin-right: 50px;
+}
+
+.seacrhBtn {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.mainAudiImg,
+.audiSecondSectionImg {
+  padding-top: 90px;
+	width: 100%;
+	height: auto;
+}
+
+.main-section {
+  position: relative;
+}
+
+.header-main-text,
+.header-subtitle-text,
+.headerLearnMoreBtn {
+  position: absolute;
+  color: black;
+}
+
+.header-main-text {
+  top: 199px;
+  left: 80px;
+  font-size: clamp(1.5rem, 3vw, 10rem);
+  font-weight: bold;
+}
+
+.header-subtitle-text {
+  top: 282px;
+  left: 80px;
+  font-size: clamp(0.5rem, 1.45vw, 10rem);	
+}
+
+.headerLearnMoreBtn {
+  top: 366px;
+  left: 80px;
+  padding: 20px 40px;
+  border: none;
+  font-size: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.headerLearnMoreBtn:hover {
+  background-color: rgb(68, 68, 68);
+  color: white;
+}
+
+.second-section-main-text {
+  margin-top: 80px;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+	text-align: center;
+}
+
+.second-section-subtitle-text {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+.audiThirdSectionImg,
+.audiFourthSectionImg {
+	width: 100%;
+	min-width: 50%;
+	height: auto;
+}
+
+.third-section-main-text {
+  margin-top: 80px;
+  display: flex;
+  font-size: clamp(1.5rem, 3vw, 10rem);
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.third-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.third-section-column-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.third-aboutBtn-container {
+  display: flex;
+  margin-top: 55px;
+  justify-content: center;
+}
+
+.fourth-section-main-text {
+  margin-top: 80px;
+  display: flex;
+  font-size: clamp(1.5rem, 3vw, 10rem);
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.fourth-section-container {
+  display: flex;
+}
+
+.third-section-text,
+.fourth-section-text {
+  font-size: clamp(1rem, 2vw, 2rem);
+  display: flex;
+  justify-content: center;
+	padding-right: 100px;
+	padding-left: 100px;
+	padding-top: 80px;
+  text-align: center;
+}
+
+.fourth-section-column-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.fourth-aboutBtn-container {
+  display: flex;
+  margin-top: 55px;
+  justify-content: center;
+}
+
+#AboutBtn {
+  border: none;
+  background-color: rgb(227, 227, 227);
+  padding: 20px 40px;
+  font-size: 24px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#AboutBtn:hover {
+  background-color: rgb(68, 68, 68);
+  color: white;
+}
+
+.backToTopBtn-container {
+  display: flex;
+  position: relative;
+}
+
+.backToTopBtn {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  right: 0;
+  margin-top: 108px;
+  margin-right: 40px;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.backToTopBtn:hover {
+  color: rgb(109, 109, 109);
+  filter: invert(51%) sepia(0%) saturate(1138%) hue-rotate(190deg)
+    brightness(84%) contrast(104%);
+}
+
+.back-to-top-text {
+  font-size: 20px;
+}
+
+.arrowBackToTopIcon {
+  height: 27px;
+  width: 27px;
+  margin-left: 10px;
+}
+
+.footer {
+  margin-top: 180px;
+}
+
+.footer-container {
+  align-items: center;
+  display: flex;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+
+.inst-link {
+  text-decoration: underline;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+
+	.header-container {
+		transition: 0.15s;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+  .header-main-text {
+    top: 150px;
+    left: 40px;
+    font-size: 40px;
+  }
+
+  .header-subtitle-text {
+    top: 220px;
+    left: 40px;
+    font-size: 18px;
+  }
+	.nav-item {
+		font-size: 14px;
+	}
+
+  .headerLearnMoreBtn {
+    top: 290px;
+    left: 40px;
+    font-size: 18px;
+    padding: 14px 28px;
+  }
+  .third-section-main-text,
+  .fourth-section-main-text {
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+	.second-section-main-text {
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+
+	.second-section-subtitle-text {
+		font-size: 18px;
+	}
+
+  .third-section-text,
+  .fourth-section-text {
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+
+	.header-container {
+		transition: 0.15s;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+  .header-main-text {
+		transition: 0.15s;
+    top: 180px;
+    left: 60px;
+    font-size: 48px;
+  }
+	.audi-logo {
+		height: 18px;
+		width: 63px;
+	}
+
+	.search-logo {
+		width: 29px;
+		height: 29px;
+	}
+
+	.nav-item {
+		font-size: 20px;
+	}
+
+  .header-subtitle-text {
+		transition: 0.15s;
+    top: 260px;
+    left: 60px;
+    font-size: 20px;
+  }
+
+  .headerLearnMoreBtn {
+		transition: 0.15s;
+    top: 340px;
+    left: 60px;
+    font-size: 20px;
+    padding: 16px 32px;
+  }
+  .third-section-main-text,
+  .fourth-section-main-text {
+    font-size: 48px;
+    margin-top: 70px;
+    margin-bottom: 35px;
+  }
+
+	.second-section-main-text {
+		font-size: 48px;
+		margin-bottom: 20px;
+	}
+
+	.second-section-subtitle-text {
+		font-size: 20px;
+	}
+
+  .third-section-text,
+  .fourth-section-text {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+  }
+
+	.footer-container {
+		transition: font-size 0.15s;
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 1400px) {
+
+	.header-container {
+		transition: 0.15s;
+	}
+
+  .header-main-text {
+		transition: 0.15s;
+    top: 199px;
+    left: 80px;
+    font-size: 56px;
+  }
+
+  .header-subtitle-text {
+		transition: 0.15s;
+    top: 282px;
+    left: 80px;
+    font-size: 22px;
+  }
+
+  .headerLearnMoreBtn {
+		transition: 0.15s;	
+    top: 366px;
+    left: 80px;
+    font-size: 22px;
+    padding: 18px 36px;
+  }
+  .third-section-main-text,
+  .fourth-section-main-text {
+    font-size: 56px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+	.second-section-main-text {
+		font-size: 56px;
+		margin-bottom: 20px;
+	}
+
+	.second-section-subtitle-text {
+		font-size: 24px;
+	}
+
+  .third-section-text,
+  .fourth-section-text {
+    font-size: 26px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 80px;
+  }
+
+	.footer-container {
+		transition: 0.15s;
+		padding-left: 90px;
+		padding-right: 90px;
+	}
+}
+
+@media (min-width: 1400px) {
+  .header-main-text {
+		transition: 0.15s;
+    top: 199px;
+    left: 80px;
+    font-size: 64px;
+  }
+
+  .header-subtitle-text {
+		transition: 0.15s;
+    top: 282px;
+    left: 80px;
+    font-size: 24px;
+  }
+
+  .headerLearnMoreBtn {
+		transition: 0.15s;
+    top: 366px;
+    left: 80px;
+    font-size: 22px;
+    padding: 20px 40px;
+  }
+	.second-section-main-text {
+		font-size: 64px;
+		margin-bottom: 20px;
+	}
+
+	.second-section-subtitle-text {
+		font-size: 24px;
+	}
+
+  .third-section-main-text,
+  .fourth-section-main-text {
+    font-size: 64px;
+    margin-top: 90px;
+    margin-bottom: 45px;
+  }
+  .third-section-text,
+  .fourth-section-text {
+    font-size: 32px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 90px;
+  }
+
+	.footer-container {
+		transition: font-size 0.15s;
+		padding-left: 100px;
+		padding-right: 100px;
+		font-size: 24px;
+	}
+}
