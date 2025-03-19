@@ -8,29 +8,46 @@
 </head>
 <body>
 	<div class="header">
+
+		<div id="leftTopMenu">
+			<button id="hamburgerBtn" onclick="hamburgerBtn()">
+			<img class="hamburger-menu-img" src="imgs/header/menu-burger.svg">
+			<p id="hamburgerMenuText"></p>
+		</button>
+		<div id="hamburgerMenu">
+			<ul id="menuNavItemContainer">
+				<li class="menuNavItem"></li>
+				<li class="menuNavItem"></li>
+				<li class="menuNavItem"></li>
+				<li class="menuNavItem"></li>
+				<li class="menuNavItem"></li>
+			</ul>
+		</div>
+		</div>
+
 		<div class="header-container">
 			<div class="left-section">
 				<img class="audi-logo" src="imgs/header/audi-logo.svg">
 			</div>
 
 			<div class="middle-section">
-				<div class="middle-section-container">
-					<div class="nav-item">Models</div>
-					<div class="nav-item">Innovation</div>
-					<div class="nav-item">Careers</div>
-					<div class="nav-item">Sustainability</div>
-					<div class="nav-item">Audi in sport</div>
-				</div>
-				
+				<nav>
+					<ul class="nav-item-container">
+						<li class="nav-item">Models</li>
+						<li class="nav-item">Innovation</li>
+						<li class="nav-item">Careers</li>
+						<li class="nav-item">Sustainability</li>
+						<li class="nav-item">Audi in sport</li>
+					</ul>
+				</nav>
 			</div>
 
 			<div class="right-section">
-				<button class="seacrhBtn">
-					<img class="seacrh-logo" src="imgs/header/search-logo.svg">
+				<button class="seacrh-button">
+					<img class="search-logo" src="imgs/header/search-logo.svg">
 				</button>
 			</div>
 		</div>
-			
 	</div>
 
 	<div class="main">
@@ -93,13 +110,13 @@
 
 	<div class="footer">
 		<div class="footer-container">
-			<div class="left-section">
+			<div class="footer=left-section">
 				Made by Daniil Piddubnyi
 			</div>
-			<div class="middle-section">
+			<div class="footer-middle-section">
 				<a href="https://www.instagram.com/rrythmx" target="_blank" class="inst-link">Instagram: @rrythmx</a>
 			</div>
-			<div class="right-section">
+			<div class="footer-right-section">
 				Poland | 2025
 			</div>
 	</div>

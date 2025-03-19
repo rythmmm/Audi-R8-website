@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+#leftTopMenu {
+  display: none;
+}
+
 .header {
   top: 0;
   right: 0;
@@ -24,7 +28,6 @@
   margin-right: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   padding-top: 15.5px;
   padding-bottom: 15.5px;
@@ -43,15 +46,20 @@
 
 .middle-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-left: 100px;
   flex-grow: 1;
 }
 
-.middle-section-container {
+.middle-section nav ul {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.middle-section nav ul li {
+  margin-right: 50px;
 }
 
 .nav-item {
@@ -69,11 +77,10 @@
   margin-right: 50px;
 }
 
-.seacrhBtn {
+.seacrh-button {
   background-color: white;
   border: none;
   cursor: pointer;
-  display: flex;
 }
 
 .search-logo {
@@ -83,13 +90,18 @@
 
 .mainAudiImg,
 .audiSecondSectionImg {
-  padding-top: 90px;
   width: 100%;
   height: auto;
 }
 
+.main {
+  padding-top: 0;
+  margin-top: 0;
+}
+
 .main-section {
-  position: relative;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .header-main-text,
@@ -150,7 +162,7 @@
 .audiFourthSectionImg {
   width: 100%;
   min-width: 50%;
-  height: auto;
+  height: 100%;
 }
 
 .third-section-main-text {
@@ -269,6 +281,8 @@
 }
 
 .footer-container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   display: flex;
   background-color: black;
@@ -284,11 +298,281 @@
   color: white;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
+  #leftTopMenu {
+    transition: 0.15s;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: 100;
+  }
+
+  #hamburgerMenu {
+    transition: 0.15s;
+    display: none;
+    height: 100vh;
+    width: 400px;
+    list-style-type: none;
+    overflow: hidden;
+  }
+
+  .hamburger-menu-img {
+    height: 20px;
+    width: 20px;
+  }
+
+  #hamburgerBtn {
+    transition: 0.15s;
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #hamburgerMenuText {
+    transition: 0.15s;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .menuNavItem {
+    flex-direction: column;
+    position: relative;
+    top: 75px;
+    padding-top: 10px;
+    list-style-type: none;
+    font-size: 32px;
+  }
+
+  .main-section {
+    margin-top: 80px;
+  }
   .header-container {
     transition: 0.15s;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: 60px;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .audi-logo {
+    display: flex;
+    height: 25px;
+    width: 70px;
+  }
+  .nav-item {
+    margin-right: 0;
+    font-size: 14px;
+  }
+  .header-container {
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+  .header-main-text {
+    top: 100px;
+    left: 40px;
+    font-size: 24px;
+  }
+  .header-subtitle-text {
+    top: 135px;
+    left: 40px;
+    font-size: 12px;
+    max-width: 200px;
+  }
+  .headerLearnMoreBtn {
+    top: 175px;
+    left: 40px;
+    font-size: 8px;
+    padding: 8px 20px;
+  }
+  .second-section-subtitle-text {
+    font-size: 18px;
+  }
+  .third-section-text,
+  .fourth-section-text {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 60px;
+  }
+  .middle-section {
+    display: none;
+  }
+
+  .right-section {
+    display: none;
+  }
+
+  .second-section-main-text,
+  .third-section-main-text,
+  .fourth-section-main-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .second-section-subtitle-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .third-section-container,
+  .fourth-section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .third-section-column-container,
+  .fourth-section-column-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .audiThirdSectionImg,
+  .audiFourthSectionImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .third-section-text,
+  .fourth-section-text {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #AboutBtn {
+    margin-top: -10px;
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+
+  .fourth-section-container .audiFourthSectionImg {
+    order: -1;
+  }
+
+  .footer-container {
+    transition: font-size 0.15s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .footer-left-section,
+  .footer-middle-section,
+  .footer-right-section {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 768.01px) and (max-width: 866px) {
+  .main-section {
+    margin-top: 40px;
+  }
+  .header-container {
+    transition: 0.15s;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .header-main-text {
+    top: 120px;
+    left: 40px;
+    font-size: 40px;
+  }
+  .header-subtitle-text {
+    top: 190px;
+    left: 40px;
+    font-size: 18px;
+    max-width: 350px;
+  }
+  .headerLearnMoreBtn {
+    top: 260px;
+    left: 40px;
+    font-size: 18px;
+    padding: 14px 28px;
+  }
+
+  .middle-section {
+    margin-left: 15px;
+  }
+
+  .middle-section nav ul li {
+    margin-right: 30px;
+  }
+
+  .audi-logo {
+    height: 13px;
+    width: 52px;
+  }
+
+  .search-logo {
+    width: 18px;
+    height: 18px;
+  }
+
+  .nav-item {
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  .third-section-main-text,
+  .fourth-section-main-text {
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .second-section-main-text {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .second-section-subtitle-text {
+    font-size: 18px;
+  }
+
+  .third-section-text,
+  .fourth-section-text {
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+  }
+  .footer-container {
+    transition: font-size 0.15s;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 866.01px) and (max-width: 992px) {
+  .header-container {
+    transition: 0.15s;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .middle-section {
+    margin-left: 50px;
+    margin-right: 0;
+  }
+  .middle-section nav ul li {
+    margin-right: 30px;
   }
   .header-main-text {
     top: 150px;
@@ -301,6 +585,16 @@
     left: 40px;
     font-size: 18px;
   }
+  .audi-logo {
+    height: 13px;
+    width: 52px;
+  }
+
+  .search-logo {
+    width: 18px;
+    height: 18px;
+  }
+
   .nav-item {
     font-size: 14px;
   }
@@ -334,13 +628,24 @@
     padding-right: 40px;
     padding-top: 60px;
   }
+
+  .footer-container {
+    transition: font-size 0.15s;
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 992.01px) and (max-width: 1200px) {
   .header-container {
     transition: 0.15s;
     margin-left: 50px;
     margin-right: 50px;
+  }
+  .middle-section {
+    margin-left: 50px;
+    margin-right: 0;
   }
 
   .header-main-text {
@@ -350,22 +655,17 @@
     font-size: 48px;
   }
   .audi-logo {
-    height: 18px;
-    width: 63px;
-  }
-
-  .seacrhBtn {
-    height: 29px;
-    width: 29px;
+    height: 14px;
+    width: 59px;
   }
 
   .search-logo {
-    width: 29px;
-    height: 29px;
+    width: 26px;
+    height: 26px;
   }
 
   .nav-item {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .header-subtitle-text {
@@ -409,14 +709,38 @@
   .footer-container {
     transition: font-size 0.15s;
     font-size: 22px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
-@media (max-width: 1400px) {
-  .header-container {
-    transition: 0.15s;
+@media (min-width: 1200.01px) and (max-width: 1400px) {
+  .audi-logo {
+    height: 18px;
+    width: 63px;
   }
 
+  .seacrhBtn {
+    height: 29px;
+    width: 29px;
+  }
+
+  .search-logo {
+    width: 29px;
+    height: 29px;
+  }
+
+  .nav-item {
+    font-size: 22px;
+  }
+  .header-container {
+    transition: 0.15s;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .middle-section nav ul li {
+    margin-right: 40px;
+  }
   .header-main-text {
     transition: 0.15s;
     top: 199px;
@@ -469,7 +793,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1400.01px) {
   .header-main-text {
     transition: 0.15s;
     top: 199px;
