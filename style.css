@@ -356,6 +356,7 @@
   .header-container {
     transition: 0.15s;
     margin-left: 60px;
+		display: flex;
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 15px;

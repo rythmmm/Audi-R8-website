@@ -5,7 +5,7 @@ const menuNavItems = document.querySelectorAll(".menuNavItem")
 
 const menuNavItemsTexts = ["Models", "Innovation", "Careers", "Sustainability", "Audi in sport"]
 
-document.getElementById("hamburgerBtn").addEventListener("click", () => {
+function hamburgerBtn() {
 
 if (hamburgerMenu.style.display === "none" || hamburgerMenu.style.display === "") {
 	hamburgerMenu.style.display = "flex"
@@ -18,7 +18,7 @@ if (hamburgerMenu.style.display === "none" || hamburgerMenu.style.display === ""
 	hamburgerMenu.style.display = "none"
 	hamburgerMenuText.style.display = "none"
 }
-})
+}
 
 const backToTopBtn = document.getElementById("backToTopBtn")
 
