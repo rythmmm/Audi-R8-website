@@ -312,7 +312,7 @@
   #hamburgerMenu {
     transition: 0.15s;
     display: none;
-    height: 100vh;
+    height: 1000vh;
     width: 400px;
     list-style-type: none;
     overflow: hidden;
@@ -490,6 +490,10 @@
     margin-left: 25px;
     margin-right: 25px;
   }
+
+	.left-section {
+		margin-left: -35px;
+	}
   .header-main-text {
     top: 120px;
     left: 40px;
